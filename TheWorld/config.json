@@ -1,0 +1,12 @@
+{
+  "MailSettings": {
+    "ToAddress": "vovan@gmail.com"
+  },
+  "ConnectionStrings": {
+    "WorldContextConnection": "Server=(localdb)\\MSSQLLocalDB;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultsets=true;"
+  },
+  "Keys": {
+    "BindKey": "AqeR0pnCj5b3XnLslviyVpbhy6-TjWwyTW8YIFsIY6_KE4oM9PnK52lLfS2hm7bQ"
+  }
+
+}

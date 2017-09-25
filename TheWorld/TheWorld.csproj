@@ -5,6 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot/js\simpleControls.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\WorldApp%2528Asp.net_Core%2529\TheWorld\wwwroot\css\img\user.jpg" />
+    <Content Include="..\..\WorldApp%2528Asp.net_Core%2529\TheWorld\wwwroot\img\user.jpg" />
+    <Content Include="wwwroot\js\app-trips.js" />
+    <Content Include="wwwroot\js\simpleControls.js" />
+    <Content Include="wwwroot\js\tripEditorController.js" />
+    <Content Include="wwwroot\js\tripsController.js" />
+    <Content Include="wwwroot\view\tripEditorView.html" />
+    <Content Include="wwwroot\view\tripsView.html" />
+    <Content Include="wwwroot\view\waitCursor.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Models\WorldContext.cs" />
     <None Include="wwwroot\index.html" />
   </ItemGroup>

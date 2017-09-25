@@ -1,34 +1,23 @@
-﻿@model IEnumerable<TheWorld.Models.Trip>
-
-@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="row">
-    <div class="col-md-6">
-        <h1>Hello world!</h1>
-        <p>This will be a fun website soon</p>
+@section Scripts{
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="~/lib/travelmap/travelmap.min.js"></script>
+   
+    <script src="~/lib/gmaps/gmaps.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWA5Hw2BdhpXK8b6Zxy118Z0Ei-ECie6s"
+        type="text/javascript"></script>
+    <script src="~/js/simpleControls.js"></script>
+    <script src="~/js/app-trips.js"></script>
+    <script src="~/js/tripsController.js"></script>
+    <script src="~/js/tripEditorController.js"></script>
+    
+}
+<div class="row" ng-app="app-trips">
+    
+    <div ng-view></div>
 
-        <form>
-            <div class="form-group">
-                <label>Date</label>
-                <input class="form-control"/>
-            </div>
-            <div class="form-group">
-                <label>Location</label>
-                <input class="form-control" />
-            </div>
-            <div>
-                <input type="submit" value="Add" class="btn btn-success"/>
-            </div>
-        </form>
-    </div>
-    <div class="col-md-6">
-        The Map
-        <ul>
-            @foreach (var item in Model)
-            {
-                <li>@item.Name : @item.DateCreated.ToString("d")</li>
-            }
-        </ul>
-    </div>
-</div>
+  </div>
